@@ -1,9 +1,12 @@
+/* Global Styles */
 body {
-    background-image: linear-gradient(to bottom right, rgba(255, 235, 193, 0.3), rgba(245, 245, 220, 0.3));
+    background-image: linear-gradient(to bottom right, rgba(207, 207, 207, 0.4), rgba(160, 160, 160, 0.4));
     margin: 0;
     min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* Footer Styles */
 footer {
     position: absolute;
     bottom: 0;
@@ -13,89 +16,67 @@ footer {
     padding: 35px;
 }
 
+/* Typography */
 p {
     padding: 5px 0;
-    margin: 25px 50px;
+    margin: 30px 50px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
 }
 
+/* Header Styles */
 .header {
     background-color: rgba(66, 41, 18, 0.668);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px;
     margin: 0;
     text-align: center;
 }
 
+/*Headers Alligned*/
+h1 {
+    text-align: center;
+}
+
+/* Image Container Styles */
 .image-container {
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 20px;
     padding: 10px;
     gap: 20px;
+    text-align: center;
 }
 
-.image-container img {
-    border: 5px solid #4e34186f; 
-    border-radius: 15px; 
+/* Add Border to the Image */
+.recipe img {
+    border: 5px solid rgba(66, 41, 18, 0.668);
+    border-radius: 15px;
     padding: 5px;
-    box-shadow: 0 6px 10px rgba(62, 37, 9, 0.568); 
-    max-width: 100%; 
+    box-shadow: 0 6px 10px rgba(62, 37, 9, 0.568);
+    max-width: 100%;
 }
 
-.image-container :hover {
+/* Hover Effect for Images */
+.image-container img:hover {
     transform: scale(1.05);
-    background-color: rgba(72, 48, 23, 0);
-    color: #0000007c;
     transition: all 0.3s ease;
-
 }
 
-.recipe {
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.recipe :hover {
-    background-color: rgba(62, 37, 9, 0.568);
-}
-
-.links {
-    text-align: center;
-}
-
-.links a {
-    color: #000;
-    text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-    background-color: rgba(211, 161, 99, 0.545);
-    padding: 2px 10px;
-    border-radius: 15px;
-    margin: 0 10px;
-    display: inline-block;
-    
-}
-
-h1 {
-    text-align: center;
-}
-
-
-
-a:hover {
-    transform: scale(1.25);
-    background-color: rgba(72, 48, 23, 0.751);
-    color: #fff;
-}
-
+/* List Styling */
 .lists {
     text-align: center;
 }
 
+li {
+    list-style-type: none;
+    margin: 5px;
+}
 
+/* Footer Link Hover Effect */
+footer a:hover {
+    color: red;
+    transition: color 0.5s ease;
+}
