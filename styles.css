@@ -62,7 +62,8 @@ h1 {
 /* Hover Effect for Images */
 .image-container img:hover {
     transform: scale(1.05);
-    transition: all 0.3s ease;
+    filter: brightness(0.7);
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 /* List Styling */
